@@ -4,12 +4,20 @@ body{
     background-repeat: no-repeat;
     background-position: center;
 }
-
+.grid-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 20px;
+        width: 100%;
+        margin-right: 15rem;
+        margin-top: 4rem;
+        border-radius: 5pex;
+        }
 
 form {
     color:white;
     font-size: 20px;
-    text-align: center;
+  
 }
 nav {
     color: whitesmoke;
@@ -17,4 +25,14 @@ nav {
     text-align: center;
     margin-left: 7rem;
 }
-
+form input {
+    width: 350px;
+    display: block;
+    height: 20px;
+    border: 1px solid rgb(18, 180, 230);
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
