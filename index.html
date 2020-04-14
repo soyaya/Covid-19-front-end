@@ -3,7 +3,8 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="description" content="covid-19 estimator">
+    <meta name="description" content="covid-19 estimator gives the estimate of the impact of covid">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords" content="period type estimated time impact severe impact infection">
     <meta name="author" content="soyaya">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -22,36 +23,31 @@
           <form action="" class="form-group">
           <label>
               What is the population of your region?
-              <input data-population="" type="number" class="form-control" placeholder="population " min="0" name="population"/>
+              <input data-population="" type="number" class="form-control" placeholder="population "  name="population"/>
           </label>
           <label>
               Estimated impact after how many days?
-              <input data-time-to-elapse="" type="number" class="form-control" min="0" placeholder="period of time" name="timeToElapse">
+              <input data-time-to-elapse="" type="number" class="form-control"  placeholder="period of time" name="timeToElapse">
           </label>
           <label>
               How many reported cases doe you have in your region?
-              <input data-reported-cases="" type="number" min="0" class="form-control" placeholder="reported cases" name="reportedCases"/>
+              <input data-reported-cases="" type="number"  class="form-control" placeholder="reported cases" name="reportedCases"/>
           </label>
           <label>
               Estimated number of hospital beds within your region
-              <input data-total-hospital-beds="" type="number" min="0" placeholder="total hospital beds" class="form-control" name="totalHospitalBeds"/>
+              <input data-total-hospital-beds="" type="number"  placeholder="total hospital beds" class="form-control" name="totalHospitalBeds"/>
           </label>
 
           <label for="period">Choose a Period
-          <select data-period-type="" name="periodType" size="1" id="period" tabindex="0" class="form-control">
+          <select data-period-type="" name="periodType" size="1"   class="form-control">
               <option value="days">Days</option>
               <option value="weeks">Weeks</option>
               <option value="months">Months</option>
           </select></label>
-          <input data-go-estimate="" type="submit" role="button" tabindex="0" aria-pressed="true" id="button" class="form-control"name="Submit Figures" aria-label="Feed Data">
+          <input data-go-estimate="" type="submit" role="button"  aria-pressed="true" class="form-control"name="Submit Figures" aria-label="Feed Data">
       </form></div>
         <div class="col-lg-7 col-md-7 col-sm-12 col-xm-12">
-          <div class="rm1"></div>
-          <div class="rm2"></div>
-          <div class="rm3"></div>
-          <div class="rm4"></div>
-          <div class="rm5"></div>
-          <div class="rm6"></div>
+          
         </div>
       
   </div>
