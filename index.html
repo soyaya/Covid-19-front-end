@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", aria-hidden="true" >
+    <meta name="Description" content="A Single Page Web App that allows you input data and receive estimated projected values for impact and severe impact scenarious of the coronavirus pandemic. ">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assessment-Covid-19</title>
+    <link href="index.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <h1>Single Page Web App</h1>
+
+    <div tabindex="0">
+        <form action="">
+            <label>
+                Receive population numbers
+                <input data-population="" type="number" placeholder="population of people" min="0" name="population"/>
+            </label>
+            <label>
+                Receive time to elapse
+                <input data-time-to-elapse="" type="number" min="0" placeholder="period of time" name="timeToElapse">
+            </label>
+            <label>
+                Receive number of reported cases
+                <input data-reported-cases="" type="number" min="0" placeholder="reported cases" name="reportedCases"/>
+            </label>
+            <label>
+                Receive number of hospital beds
+                <input data-total-hospital-beds="" type="number" min="0" placeholder="total hospital beds" name="totalHospitalBeds"/>
+            </label>
+
+            <label for="period">Choose a Period</label>
+            <select data-period-type="" name="periodType" size="1" id="period" tabindex="0">
+                <option value="days">Days</option>
+                <option value="weeks">Weeks</option>
+                <option value="months">Months</option>
+            </select>
+            <input data-go-estimate="" type="submit" role="button" tabindex="0" aria-pressed="true" id="button" name="Submit Figures" aria-label="Feed Data">
+        </form>
+    </div>
+</body>
+</html>
